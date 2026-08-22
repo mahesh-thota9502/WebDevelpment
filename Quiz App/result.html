@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <title>Result - Quiz Master</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            Quiz Master
+        </div>
+        <nav>
+            <a href="index.html">
+                Home
+            </a>
+        </nav>
+    </header>
+    <main class="result-page">
+        <div class="result-box">
+            <h1>
+                Exam Completed
+            </h1>
+            <p>
+                Congratulations,
+                <strong id="resultName"></strong>
+            </p>
+            <div class="score-circle">
+                <span id="score"></span>
+            </div>
+            <h2 id="resultMessage"></h2>
+            <div class="result-details">
+                <p>
+                    Correct Answers:
+                    <strong id="correct"></strong>
+                </p>
+                <p>
+                    Wrong Answers:
+                    <strong id="wrong"></strong>
+                </p>
+                <p>
+                    Total Questions:
+                    <strong id="total"></strong>
+                </p>
+            </div>
+            <div class="result-buttons">
+                <a href="quiz.html">
+                    Retake Quiz
+                </a>
+                <a href="index.html">
+                    Go Home
+                </a>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>
+            © 2026 Quiz Master
+        </p>
+    </footer>
+    <script src="result.js"></script>
+</body>
+</html>

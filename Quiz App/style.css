@@ -1,0 +1,310 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #fbfbfd;
+    color: #a00101;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+ 
+header {
+    background: #222;
+    color: white;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 8%;
+     
+}
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+}
+nav {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+}
+nav a:hover {
+  text-shadow: 2px 2px 5px gainsboro;  
+}
+.login-btn {
+    background: #4facfe;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+#logoutBtn {
+    background: #dc3545;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+ 
+main {
+    flex: 1;
+}
+ 
+.hero {
+    min-height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background:
+        linear-gradient(
+            135deg,
+            #667eea,
+            #764ba2
+        );
+    color: white;
+}
+.hero-content h1 {
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+.hero-content p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.start-btn {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 14px 30px;
+    background: white;
+    color: #667eea;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+}
+ 
+.about {
+    text-align: center;
+    padding: 60px 20px;
+}
+.about h2 {
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+.about p {
+    max-width: 700px;
+    margin: auto;
+    line-height: 1.6;
+}
+ 
+.features {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    padding: 20px 8% 60px;
+}
+.feature-card {
+    background: white;
+    padding: 30px;
+    text-align: center;
+    width: 280px;
+    border-radius: 10px;
+    box-shadow:
+        0 5px 15px rgba(0,0,0,0.1);
+}
+.feature-card h3 {
+    margin-bottom: 15px;
+}
+ 
+.login-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 20px;
+}
+.login-box {
+    background: white;
+    width: 400px;
+    padding: 35px;
+    border-radius: 10px;
+    box-shadow:
+        0 5px 20px rgba(0,0,0,0.1);
+}
+.login-box h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+.login-box > p {
+    text-align: center;
+    color: #666;
+    margin-bottom: 25px;
+}
+.input-group {
+    margin-bottom: 20px;
+}
+.input-group label {
+    display: block;
+    margin-bottom: 7px;
+    font-weight: bold;
+}
+.input-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+.input-group small {
+    color: red;
+}
+#loginError {
+    color: red;
+    text-align: center;
+    margin-bottom: 15px;
+}
+.login-box button {
+    width: 100%;
+    padding: 12px;
+    background: #667eea;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 17px;
+    cursor: pointer;
+}
+.demo-login {
+    margin-top: 20px;
+    padding: 15px;
+    background: #f1f1f1;
+    text-align: center;
+    border-radius: 5px;
+}
+ 
+.quiz-container {
+    max-width: 800px;
+    margin: 40px auto;
+    background: white;
+    padding: 35px;
+    border-radius: 10px;
+    box-shadow:
+        0 5px 20px rgba(0,0,0,0.1);
+}
+.quiz-container > h1 {
+    text-align: center;
+}
+.quiz-info {
+    text-align: center;
+    margin: 10px 0 30px;
+    color: #666;
+}
+.question {
+    background: #f8f9fa;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+.question h3 {
+    margin-bottom: 15px;
+}
+.question label {
+    display: block;
+    padding: 10px;
+    cursor: pointer;
+}
+.question label:hover {
+    background: #e9ecef;
+}
+.question input {
+    margin-right: 10px;
+}
+#quizError {
+    color: red;
+    text-align: center;
+    margin: 15px;
+}
+.submit-btn {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 5px;
+    background: #667eea;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+}
+ 
+.result-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 20px;
+}
+.result-box {
+    background: white;
+    width: 500px;
+    text-align: center;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow:
+        0 5px 20px rgba(0,0,0,0.1);
+}
+.result-box h1 {
+    margin-bottom: 15px;
+}
+.score-circle {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: #667eea;
+    color: white;
+    margin: 30px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+    font-weight: bold;
+}
+.result-details {
+    margin: 25px;
+    line-height: 2;
+}
+.result-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+.result-buttons a {
+    text-decoration: none;
+    color: white;
+    background: #667eea;
+    padding: 12px 20px;
+    border-radius: 5px;
+}
+ 
+footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+ 
+@media (max-width: 700px) {
+    nav {
+        gap: 10px;
+    }
+    .hero-content h1 {
+        font-size: 32px;
+    }
+    .features {
+        flex-direction: column;
+        align-items: center;
+    }
+    .feature-card {
+        width: 90%;
+    }
+    .quiz-container {
+        margin: 20px;
+        padding: 20px;
+    }
+}

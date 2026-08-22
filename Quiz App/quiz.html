@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <title>Quiz - Quiz Master</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            Quiz Master
+        </div>
+        <nav>
+            <span>
+                Welcome,
+                <strong id="userName"></strong>
+            </span>
+            <button id="logoutBtn">
+                Logout
+            </button>
+        </nav>
+    </header>
+    <main>
+        <div class="quiz-container">
+            <h1>
+                JavaScript Quiz
+            </h1>
+            <p class="quiz-info">
+                Answer all questions and submit your exam.
+            </p>
+            <form id="quizForm">
+                <div class="question">
+                    <h3>
+                        1. Which keyword is used to declare
+                        a variable in JavaScript?
+                    </h3>
+                    <label>
+                        <input type="radio" name="q1" value="var"> var
+                    </label>
+                    <label>
+                        <input type="radio" name="q1" value="int">int
+                    </label>
+                    <label>
+                        <input type="radio" name="q1" value="string">string
+                    </label>
+                    <label>
+                        <input type="radio" name="q1" value="define">define
+                    </label>
+                </div>
+                <div class="question">
+                    <h3>
+                        2. Which method adds an element
+                        to the end of an array?
+                    </h3>
+                    <label>
+                        <input type="radio" name="q2" value="push" >push()
+                    </label>
+                    <label>
+                        <input type="radio" name="q2" value="pop">pop()
+                    </label>
+                    <label>
+                        <input type="radio" name="q2" value="shift">shift()
+                    </label>
+                    <label>
+                        <input name="q2" value="slice" type="radio">slice()
+                    </label>
+                </div>
+                <div class="question">
+                    <h3>
+                        3. Which method converts JSON
+                        into a JavaScript object?
+                    </h3>
+                    <label>
+                        <input  type="radio"  name="q3"  value="parse"> JSON.parse()
+                    </label>
+                    <label>
+                        <input type="radio" name="q3" value="stringify" > JSON.stringify()
+                    </label>
+                    <label>
+                    <input type="radio"  name="q3" value="convert">JSON.convert()
+                    </label>
+                    <label>
+                        <input  type="radio"  name="q3"  value="object">JSON.object()
+                    </label>
+                </div>
+                <div class="question">
+                    <h3>
+                        4. Which method selects an HTML
+                        element using its ID?
+                    </h3>
+                    <label>
+                        <input type="radio"name="q4"value="getElementById">getElementById()
+                    </label>
+                    <label>
+                        <input    type="radio"    name="q4"    value="query">query()
+                    </label>
+                    <label>
+                        <input    type="radio"    name="q4"    value="select">select()
+                    </label>
+                    <label>
+                        <input    type="radio"    name="q4"    value="getElement">getElement()
+                    </label>
+                </div>
+                <div class="question">
+                    <h3>
+                        5. Which function prints output
+                        to the browser console?
+                    </h3>
+                    <label>
+                        <input type="radio"    name="q5"    value="console.log">console.log()
+                    </label>
+                    <label>
+                        <input type="radio"    name="q5"    value="print">print()
+                    </label>
+                    <label>
+                        <input type="radio"    name="q5"    value="display">display()
+                    </label>
+                    <label>
+                        <input type="radio"    name="q5"    value="write">write()
+                    </label>
+                </div>
+                <p id="quizError"></p>
+                <button
+                    type="submit"
+                    class="submit-btn"
+                >
+                    Submit Exam
+                </button>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <p>
+            © 2026 Quiz Master
+        </p>
+    </footer>
+    <script src="quiz.js"></script>
+</body>
+</html>
